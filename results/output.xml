@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-08T17:39:27.130593" rpa="false" schemaversion="5">
+<suite id="s1" name="TC01 LoginSucess" source="C:\Users\naiac\Documents\AUTOMAÇÃO-TESTES\Tests\Login\TC01_LoginSucess.robot">
+<test id="s1-t1" name="TC01 - Logar na Conta Google" line="5">
+<kw name="Dado que eu acesse o site Google" owner="Home_Steps">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T17:39:27.446041" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T17:39:27.445038" elapsed="3.632373"/>
+</kw>
+<status status="PASS" start="2024-04-08T17:39:27.444039" elapsed="3.633372"/>
+</kw>
+<kw name="E acesso a opção de Login" owner="Home_Steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-08T17:39:31.083644" level="INFO">Clicking element '//*[@id="gb"]/div/div[2]/a/span'.</msg>
+<arg>${Home.Fazer_Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T17:39:31.077411" elapsed="1.510845"/>
+</kw>
+<status status="PASS" start="2024-04-08T17:39:31.077411" elapsed="1.511837"/>
+</kw>
+<kw name="E faço o login" owner="Login_Steps">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T17:39:32.592256" level="INFO">Typing text 'automatizacao.geral@gmail.com' into text field 'ID=identifierId'.</msg>
+<arg>${Login.Input_Email}</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T17:39:32.590255" elapsed="0.356086"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-08T17:39:32.946341" level="INFO">Clicking element '//*[@id="identifierNext"]/div/button/span'.</msg>
+<arg>${Login.Button_Avancar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T17:39:32.946341" elapsed="0.264762"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Login.Input_Senha}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-08T17:39:33.211103" elapsed="4.635000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T17:39:37.848158" level="INFO">Typing text 'Auto@123' into text field '//input[@type="password"]'.</msg>
+<arg>${Login.Input_Senha}</arg>
+<arg>${Senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T17:39:37.848158" elapsed="0.144581"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-08T17:39:37.992739" level="INFO">Clicking element '//*[@id="passwordNext"]/div/button'.</msg>
+<arg>${Login.Button_Avancar_Senha}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T17:39:37.992739" elapsed="0.130353"/>
+</kw>
+<status status="PASS" start="2024-04-08T17:39:32.590255" elapsed="5.532837"/>
+</kw>
+<status status="PASS" start="2024-04-08T17:39:27.443039" elapsed="10.680053"/>
+</test>
+<status status="PASS" start="2024-04-08T17:39:27.132593" elapsed="10.993627"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC01 LoginSucess">TC01 LoginSucess</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
